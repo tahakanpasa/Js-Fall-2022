@@ -18,7 +18,7 @@ console.log(`\n\nresult1 -> ${result1}`);
 
   const sentence2 = 'Pages That you vIeW in tHIs WinDOw wont apPeAr in the broWSer history AND thEY wont LEaVE other TRACes';
 
-  let sentence2AfterReplace_Alpha = sentence2.replace(/Aa/g, 'Alpha');
+  let sentence2AfterReplace_Alpha = sentence2.replace(/a/ig, 'Alpha');
   console.log(`\n\nsentence2 -> ${sentence2}\n\n`);
   console.log(`\n\nsentence2AfterReplace_Alpha -> ${sentence2AfterReplace_Alpha}\n\n`);
 
