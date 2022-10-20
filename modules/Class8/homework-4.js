@@ -18,8 +18,8 @@
     console.log('BASKETBALL is present at index-2');
 } else if (sports.includes(lookfor,2)) {
 } else{
-    sports.fill('BASKETBALL', 2);
-    console.log(sports[2]);
+    let removedValue = sports.splice(2,1, 'BASKETBALL');
+    console.log(`Removed Value -> ${removedValue}`);
  }
  
 /**
@@ -67,25 +67,35 @@
 
  let studentScore = 160
  let maxScore = 150
- let studentPer = (studentScore / maxScore) * 100;
+ let percentege = (studentScore / maxScore) * 100;
+ let grade = '';
 
- if (studentScore < 150 || -1) { 
-console.log(`\n\nYour Percentege -> ${studentPer}`);
+ if (studentScore < maxScore || studentScore < 0) { 
+console.log(`Invalid student score`);
 } else {
-    console.log('\n\nInvalid student score');
-    
+    let percentege = (studentScore / maxScore) * 100;
+
+    if (percentege >= 91.00) {
+        grade = 'A';
+    }
+    else if (percentege >= 81.00) {
+        grade = 'B';
+    }
+    else if (percentege >= 71.00) {
+        grade = 'C';
+    }
+    else if (percentege >= 61.00) {
+        grade = 'D';
+    }
+    else if (percentege >= 51.00) {
+        grade = 'E';
+    }
+    else if (percentege >= 41.00) {
+        grade = 'F';
+    }
 }
 
-let studentScore2 = 120
- let maxScore2 = 150
- let studentPer2 = (studentScore2 / maxScore2) * 100;
 
- if (studentScore2 < 150) { 
-console.log(`\n\nYour Percentege -> ${studentPer2}`);
-} else {
-    console.log('\n\nInvalid student score\n\n');
-    
-}
 
 
 /**
